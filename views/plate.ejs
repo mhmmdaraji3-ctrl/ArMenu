@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= product.name %> - View in AR</title>
+
+  <!-- Model Viewer -->
+  <script type="module"
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+  </script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/public/css/style.css" />
+</head>
+
+<body>
+
+  <model-viewer
+    id="viewer"
+    src="<%= product.model %>"
+    ar
+    ar-modes="scene-viewer webxr quick-look"
+    ar-placement="floor"
+    ar-scale="fixed"
+    camera-controls
+    auto-rotate
+    shadow-intensity="1">
+  </model-viewer>
+
+  <button onclick="document.getElementById('viewer').activateAR()">
+    View in AR
+  </button>
+
+  <div style="margin-top: 20px;">
+    <a href="/" style="color: #666; text-decoration: none;">← Back to all products</a>
+  </div>
+
+</body>
+</html>
