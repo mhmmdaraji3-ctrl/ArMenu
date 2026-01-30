@@ -16,13 +16,13 @@ const products = {
     plate1: {
         id: 'plate1',
         name: 'Classic Dinner Plate',
-        model: '/public/models/product.glb',
+        model: '/ar/resturant-one/product-1/product.glb',
         description: 'Beautiful ceramic dinner plate'
     },
     plate2: {
         id: 'plate2',
         name: 'Modern Plate',
-        model: '/public/models/product2.glb',
+        model: '/ar/resturant-one/product-2/20_01_2026.glb',
         description: 'Sleek modern design'
     }
      
