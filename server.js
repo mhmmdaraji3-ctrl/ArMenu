@@ -9,7 +9,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 // Serve static files from the 'public' directory
-app.use('/public', express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Product data - easy to expand with more plates
 const products = {
